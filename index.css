@@ -1,0 +1,225 @@
+:root {
+    
+    --text: #080b0c;
+    --background: #f5f8f9;
+    --primary: #5fa2b3;
+    --secondary: #a0ceda;
+    --accent: #74c0d4;
+
+    /* Dark mode */
+
+    /*-- text: #f3f6f7;
+    /*-- background: #06090a;
+    /*-- primary: #4b8fa0;
+    /*-- secondary: #25545f;
+    /*-- accent: #2b778c;
+
+    */
+
+}
+
+body {
+
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+/* Top
+    The top of the page, this has the nav bar and the title
+*/
+
+.navBar{
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+
+    transform-origin: top;
+    transition-duration: 1s;
+
+}
+
+.navBarShades {
+
+    visibility: hidden;
+
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navBar-shade1 {
+
+    top: 0;
+
+    width: 100%;
+    height: 72%;
+
+    background: var(--primary);
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+
+    transform: translateY(-100%);
+
+    transform-origin: top;
+
+    z-index: 2;
+    transition-duration: .8s;
+
+}
+
+.hideLinks {
+
+    border: none;
+    background: none;
+    font-size: 2rem;
+
+    margin-left: 14px;
+
+    cursor: pointer;
+
+    transition-duration: .2s;
+
+}
+
+.hideLinks:hover {
+
+    color: var(--primary);
+
+}
+
+.navBar-shade2 {
+
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+
+    background: var(--secondary);
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    transform: translateX(-100%);
+
+    z-index: 1;
+    transition-duration: .8s;
+
+}
+
+.navBar-shade2 > .navLink {
+
+    margin: 0 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text);
+
+    transition-duration: .2s;
+    
+}
+
+.navBar-shade2 > .navLink:hover {
+    color: var(--primary);
+}
+
+.navButton {
+
+    border: none;
+    background: none;
+    
+    font-size: 2.2rem;
+
+    margin-right: auto;
+    transform: translateX(8px);
+
+    cursor: pointer;
+
+    transition-duration: .2s;
+
+}
+
+.themeBtn {
+
+    border: none;
+    background: none;
+
+    font-size: 2.2rem;
+    transform: translateX(-8px);
+
+    cursor: pointer;
+
+    transition-duration: .2s; 
+
+}
+
+.navButton:hover {
+    color: var(--primary);
+    box-shadow: 0 0 5px var(--accent);
+}
+
+.navButton[data-status="active"]:hover {
+    color: var(--secondary);
+    box-shadow: 0 0 5px var(--accent);
+}
+
+.themeBtn[data-theme="light"]:hover {
+    color: #5610d7;
+    box-shadow: 0 0 5px #3a2a65;
+}
+
+.title {
+
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 2.2rem;
+
+    margin-right: auto;
+
+    background: var(--text);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* Content 
+    Main content of the website
+*/
+
+.favoritesTitle, .challengingTitle, .allTitle {
+
+    text-align: start;
+    letter-spacing: -1px;
+    font-weight: 800;
+
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin-top: 5rem;
+    margin-left: 10px;
+
+}
+
+.favoritesTitle span, .challengingTitle span, .allTitle span {
+    background: none;
+    -webkit-text-fill-color:currentColor;
+}
