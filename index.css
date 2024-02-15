@@ -141,6 +141,29 @@ body {
     color: var(--primary);
 }
 
+.showLinks {
+
+    position: absolute;
+
+    border: none;
+    background: none;
+
+    font-size: 2rem;
+
+    top: 73%;
+    margin-left: 14px;
+
+    cursor: pointer;
+    transition-duration: .2s;
+
+}
+
+.showLinks:hover {
+    
+    color: var(--primary);
+
+}
+
 .navButton {
 
     border: none;
