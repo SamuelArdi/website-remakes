@@ -31,6 +31,8 @@ body {
 
     overflow: hidden;
 
+    transition-duration: .8s;
+
 }
 
 /* Top
@@ -95,6 +97,8 @@ body {
 
     margin-left: 14px;
 
+    color: var(--text);
+
     cursor: pointer;
 
     transition-duration: .2s;
@@ -150,6 +154,8 @@ body {
 
     font-size: 2rem;
 
+    color: var(--text);
+
     top: 73%;
     margin-left: 14px;
 
@@ -174,6 +180,8 @@ body {
     margin-right: auto;
     transform: translateX(8px);
 
+    color: var(--text);
+
     cursor: pointer;
 
     transition-duration: .2s;
@@ -189,6 +197,8 @@ body {
     transform: translateX(-8px);
 
     cursor: pointer;
+
+    width: 50px;
 
     transition-duration: .2s; 
 
@@ -221,6 +231,17 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    transition-duration: .8s;
+
+}
+
+.themeBtn-1 {
+    visibility: hidden;
+}
+
+.themeBtn-2:hover {
+    color: yellow;
+    box-shadow: 0 0 5px yellow;
 }
 
 /* Content 
@@ -233,9 +254,7 @@ body {
     letter-spacing: -1px;
     font-weight: 800;
 
-    background: linear-gradient(to right, var(--primary), var(--accent));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text);
 
     margin-top: 5rem;
     margin-left: 10px;

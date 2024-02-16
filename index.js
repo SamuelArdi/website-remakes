@@ -5,6 +5,7 @@ const title = document.querySelector(".title");
 const hamburgerBtn = document.querySelectorAll(".navButton");
 const hideLinksBtn = document.querySelector(".hideLinks");
 const showlinksBtn = document.querySelector(".showLinks");
+const themeBtn = document.querySelector(".themeBtn-2");
 
 var linksHidden;
 var shade_1 = navBarShades.children[0];
@@ -29,7 +30,7 @@ function toggleNav(status) {
 
     } else if (status === "active") {
 
-        showlinksBtn.style.transform = "translateX(-100%)";
+        showlinksBtn.style.transform = "translateX(-150%)";
 
         navBar.style.transform = "translateY(0)";
         navBarShades.style.visibility = "hidden";
@@ -41,6 +42,42 @@ function toggleNav(status) {
     }
     
 }
+
+async function toggleTheme(currentTheme) {
+
+    if (currentTheme === "light") {
+
+        document.documentElement.style.setProperty("--text", "#f3f6f7");
+        document.documentElement.style.setProperty("--background", "#1a1a1a");
+        document.documentElement.style.setProperty("--primary", "#4b8fa0");
+        document.documentElement.style.setProperty("--secondary", "#25545f");
+        document.documentElement.style.setProperty("--accent", "#2b778c");
+        themeBtn.dataset.theme = "dark";
+
+    }
+    else if (currentTheme === "dark") {
+
+        document.documentElement.style.setProperty("--text", "#080b0c");
+        document.documentElement.style.setProperty("--background", "#f5f8f9");
+        document.documentElement.style.setProperty("--primary", "#5fa2b3");
+        document.documentElement.style.setProperty("--secondary", "#a0ceda");
+        document.documentElement.style.setProperty("--accent", "#74c0d4");
+        themeBtn.dataset.theme = "light";
+
+    }
+}
+
+async function changeThemeIcon (currentTheme) {
+    if (currentTheme === "light") {
+        themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    } else if (currentTheme === "dark") {
+        themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+}
+
+// ####################
+// Event Listeners
+// ####################
 
 hamburgerBtn.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -64,4 +101,9 @@ showlinksBtn.addEventListener("click", () => {
 
     linksHidden = false;
 
+})
+
+themeBtn.addEventListener("click", async () => {
+    await toggleTheme(themeBtn.dataset.theme);
+    await changeThemeIcon(themeBtn.dataset.theme);
 })
