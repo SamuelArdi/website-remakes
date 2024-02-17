@@ -288,3 +288,37 @@ body {
     background: none;
     -webkit-text-fill-color:currentColor;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .navBar-shade1 {
+        height: 40%;
+    }
+
+    .navBar-shade2 {
+        height: 25%;
+    }
+
+    .navButton {
+        font-size: 1.8rem;
+    }
+
+    .showLinks {
+        top: 41%;
+    }
+
+    .themeBtn-2 {
+        font-size: 1.8rem;
+    }
+
+    .sourceCode {
+        font-size: 1rem;
+    }
+
+}
