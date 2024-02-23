@@ -107,3 +107,27 @@ themeBtn.addEventListener("click", async () => {
     await toggleTheme(themeBtn.dataset.theme);
     await changeThemeIcon(themeBtn.dataset.theme);
 })
+
+
+// --------------------
+// INITIALIZE SWIPER
+// --------------------
+
+const swiper = new Swiper(".swiper", {
+
+    slidesPerView: 5,
+    spaceBetween: 7,
+
+    direction: "horizontal",
+    loop: false,
+
+    pagination: {
+        el: ".swiper-pagination",
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+})

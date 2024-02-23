@@ -26,10 +26,6 @@ body {
 
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-
-    overflow: hidden;
 
     transition-duration: .8s;
 
@@ -279,7 +275,6 @@ body {
 
     color: var(--text);
 
-    margin-top: 5rem;
     margin-left: 10px;
 
 }
@@ -287,6 +282,84 @@ body {
 .favoritesTitle span, .challengingTitle span, .allTitle span {
     background: none;
     -webkit-text-fill-color:currentColor;
+}
+
+/* Cards */
+
+.swiper-wrapper {
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    transition-duration: 1s;
+
+}
+
+.swiper-slide {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+
+    border-style: solid;
+    border-radius: 1em;
+    border-width: 2px;
+
+}
+.swiper-slide > a::before{
+
+    content: "";
+    
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+
+    border-radius: 10px;
+
+    width: 267.6px;
+    height: 132.967px;
+
+    top: 10px;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+
+    pointer-events:none;
+    user-select: none;
+
+    position: absolute;
+
+    transition-duration: .5s;
+
+}
+
+.swiper-slide:hover {
+
+    background: var(--secondary);
+    border-color: var(--accent);
+
+}
+
+.swiper-slide > hr {
+    width: 100%;
+}
+
+.swiper-slide > a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.card-img {
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
 }
 
 /* Media Queries */

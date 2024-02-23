@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="roblox.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/857aaee575.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Available fonts: 
+        - Bebas Neue
+        - Roboto
+    -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="roblox.css">
+
+    <title>Roblox</title>
+
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="./images/rblx-logo.png" alt="ROBLOX">
+    </div>
+
+    <!-- Sign up container -->
+    <div class="signUp-container">
+
+        <div class="signUp-header">
+            <h1>SIGN UP NOW AND START HAVING FUN!</h1>
+        </div>
+
+        <div class="signUp-body">
+
+            <div class="signUp-formGroup">
+
+                <!-- User birthday -->
+                <label for="userBirthday" id="label-birthday" class="signUp-label">Birthday</label>
+                
+                <div class="signUp-birthday form-group">
+                    
+                    <div class="month birthdaySelect-group">
+
+                        <select name="birthdayMonth" id="monthDropdown" class="birthdaySelect">
+                            <option value="" disabled>Month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+
+                    </div>
+                
+                    <div class="day birthdaySelect-group">
+
+                        <select name="birthdayDay" id="dayDropdown" class="birthdaySelect">
+                            <option value="" disabled>Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+
+                    </div> 
+
+                    <div class="year birthdaySelect-group">
+
+                        <select name="birhtdayYear" id="yearDropdown" class="birthdaySelect">
+                            <option value="" disabled>Year</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                            <option value="2009">2009</option>
+                            <option value="2008">2008</option>
+                            <option value="2007">2007</option>
+                            <option value="2006">2006</option>
+                            <option value="2005">2005</option>
+                            <option value="2004">2004</option>
+                            <option value="2003">2003</option>
+                            <option value="2002">2002</option>
+                            <option value="2001">2001</option>
+                            <option value="2000">2000</option>
+                            <option value="1999">1999</option>
+                            <option value="1998">1998</option>
+                            <option value="1997">1997</option>
+                            <option value="1996">1996</option>
+                            <option value="1995">1995</option>
+                            <option value="1994">1994</option>
+                            <option value="1993">1993</option>
+                            <option value="1992">1992</option>
+                            <option value="1991">1991</option>
+                            <option value="1990">1990</option>
+                       </select>                
+
+                    </div>
+    
+                </div>
+
+                <!-- Username -->
+                <div class="signUp-username">
+
+                    <label for="username" class="signUp-label">Username</label>
+
+                    <div class="usernameInput form-group">
+
+                        <input type="text" name="username" placeholder="Don't use your real name" autocomplete="username" id="username" value="">
+
+                    </div>
+
+                </div>
+
+                <!-- User password -->
+                <div class="signUp-password">
+
+                    <label for="password" class="signUp-label">Password</label>
+
+                    <div class="passwordInput form-group">
+
+                        <input type="text" name="password" id="password" value="" placeholder="At least 8 characters">
+
+                    </div>
+    
+                </div>
+
+                <!-- Gender Selection -->
+                <div class="signUp-gender">
+
+                    <label for="gender" class="signUp-label">Gender</label>
+
+                    <div class="genderSelect">
+
+                        <div class="genderInput" id="maleBtn">
+
+                            <button data-gender="male">
+                                <i class="fa-solid fa-person"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="genderInput" id="femaleBtn">
+                            
+                            <button data-gender="female">
+                                <i class="fa-solid fa-person-dress"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="signUp-legal">
+                <p>By clicking Sign Up, you are agreeing to the <a href="#">Terms of Use</a> including the arbitration clause and you are acknowledging the <a href="#">Privacy Policy</a></p>
+            </div>
+
+            <div class="signUp-button">
+
+                <button id="signUpBtn">Sign Up</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Showcase container -->
+    <div class="showcase-container">
+
+        <div class="showcase-shades" style="z-index: -1;">
+
+            <div class="shade" style="transform-origin: left; transform: scaleX(0);"></div>
+            <div class="shade" style="transform-origin: right; transform: scaleX(0);"></div>
+            <div class="shade" style="transform-origin: left; transform: scaleX(0);"></div>
+            <div class="shade" style="transform-origin: right; transform: scaleX(0);"></div>
+            <div class="shade" style="transform-origin: left; transform: scaleX(0);"></div>
+            
+        </div>
+
+        <!-- Showcase indexes -->
+        <div class="showcase-indexes">
+            <button class="return-btn"> 
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <iframe src="" frameborder="0" id="showcase-index"></iframe>
+        </div>
+
+        <!-- ------------------------------
+                   SHOWCASE GAMES 
+        -->  
+        <div class="showcase-games showcase-items">
+
+            <label for="games" class="showcase-title">Play games made by other users</label>
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide js-game-items" id="game-1">
+                        <img src="./images/game-thumbs/rblx-gameThumb-1.png" class="game-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-game-items" id="game-2">
+                        <img src="./images/game-thumbs/rblx-gameThumb-2.png" class="game-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-game-items" id="game-3">
+                        <img src="./images/game-thumbs/rblx-gameThumb-3.png" class="game-card-img card-img">
+                    </div>
+
+                    <div class="swiper-slide js-game-items" id="game-4">
+                        <img src="./images/game-thumbs/rblx-gameThumb-4.png" class="game-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-game-items" id="game-5">
+                        <img src="./images/game-thumbs/rblx-gameThumb-5.png" class="game-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-game-items" id="game-6">
+                        <img src="./images/game-thumbs/rblx-gameThumb-6.png" class="game-card-img card-img">
+                    </div>
+
+                    <div class="swiper-slide js-game-items" id="game-7">
+                        <img src="./images/game-thumbs/rblx-gameThumb-7.png" class="game-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-game-items" id="game-8">
+                        <img src="./images/game-thumbs/rblx-gameThumb-8.png" class="game-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-game-items" id="game-9">
+                        <img src="./images/game-thumbs/rblx-gameThumb-9.png" class="game-card-img card-img">
+                    </div>
+
+                </div>
+
+                <!-- These are the swipe buttons
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                -->
+
+            </div>
+
+        </div>
+
+        <!-- ------------------------------
+                   SHOWCASE STORE 
+        -->  
+        <div class="showcase-store showcase-items">
+
+            <label for="store" class="showcase-title">Add style to your avatar</label>
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide js-store-items" id="store-1" data-swiper-autoplay="2000">
+                        <img src="./images/store-thumbs/rblx-store-1.png" class="store-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-store-items" id="store-2">
+                        <img src="./images/store-thumbs/rblx-store-2.png" class="store-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-store-items" id="store-3">
+                        <img src="./images/store-thumbs/rblx-store-3.png" class="store-card-img card-img">
+                    </div>
+
+                    <div class="swiper-slide js-store-items" id="store-4" data-swiper-autoplay="2100">
+                        <img src="./images/store-thumbs/rblx-store-4.png" class="store-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-store-items" id="store-5">
+                        <img src="./images/store-thumbs/rblx-store-5.png" class="store-card-img card-img">
+                    </div>
+    
+                    <div class="swiper-slide js-store-items" id="store-6">
+                        <img src="./images/store-thumbs/rblx-store-6.png" class="store-card-img card-img">
+                    </div>
+
+                    <div class="swiper-slide js-store-items" id="store-7">
+                        <img src="./images/store-thumbs/rblx-store-7.png" class="store-card-img card-img">
+                    </div>
+
+                    <div class="swiper-slide js-store-items" id="store-8">
+                        <img src="./images/store-thumbs/rblx-store-8.png" class="store-card-img card-img">
+                    </div>
+
+                    <div class="swiper-slide js-store-items" id="store-9">
+                        <img src="./images/store-thumbs/rblx-store-9.png" class="store-card-img card-img">
+                    </div>
+
+                </div>
+
+                <!-- These are the swipe buttons
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                -->
+
+            </div>
+
+        </div>
+
+        <!-- ------------------------------
+                   SHOWCASE STUDIO 
+        -->  
+        <div class="showcase-studio showcase-items">
+
+            <label for="studio" class="showcase-title">Join our Development Team by making games</label>
+
+            <div class="rblx-studio-container">
+
+                <div class="rblx-studio-card">
+                    <img src="./images/rblx-studio-logo.png" class="rblx-studio-img card-img">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="mobile-show-showcase">
+        
+        <span class="mobile-showcase-arrow">
+            <i class="fa-solid fa-down-long"></i>
+        </span>
+
+    </div>
+    
+   
+</body>
+
+</html>

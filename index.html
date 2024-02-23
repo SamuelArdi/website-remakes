@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +13,8 @@
     
     <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/857aaee575.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <title>Remakes</title>
 </head>
@@ -20,7 +23,7 @@
     <nav class="navBar">
         
         <button class="navButton" data-status="inactive"><i class="fa-solid fa-bars"></i></button>
-        <h1 class="title title-1">WEBSITE REMAKES</h1>
+        <h1 class="title title-1">WEBSITE REDESIGNS</h1>
 
         <!-- This button doesn't matter -->
         <button class="themeBtn themeBtn-1"><i class="fa-solid fa-moon"></i></button>
@@ -57,12 +60,26 @@
 
         <div class="container container-favorites">
 
-            <!--
-                <div class="card">
-                    <img src="" alt="" class="cardImg">
-                    <a href="" class="cardLink"></a>
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="./remakes/roblox/roblox.html">
+                            <img src="./images/card-image/img-rblx.png" class="card-img">
+                        </a>
+                        <hr>
+                        <a href="./remakes/roblox/roblox.html">Roblox</a>
+                    </div>
+
                 </div>
-            -->
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
 
         </div>
 
@@ -73,13 +90,6 @@
         <h1 class="challengingTitle">Challenging <span>💪</span></h1>
 
         <div class="container container-challenging">
-        
-            <!--
-                <div class="card">
-                    <img src="" alt="" class="cardImg">
-                    <a href="" class="cardLink"></a>
-                </div>
-            -->
 
         </div>
 
@@ -90,13 +100,6 @@
         <h1 class="allTitle">All <span>📁</span></h1>
 
         <div class="container container-all">
-
-            <!--
-                <div class="card">
-                    <img src="" alt="" class="cardImg">
-                    <a href="" class="cardLink"></a>
-                </div>
-            -->
 
         </div>
 

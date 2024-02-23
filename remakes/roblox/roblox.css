@@ -1,0 +1,769 @@
+:root {
+
+    --logoText: rgb(255, 255, 255);
+    --borderColor: rgb(123, 123, 123);
+    --background: rgb(36, 36, 36);
+    --background2: rgb(21, 21, 21);
+    --inputBg: rgb(16, 15, 15);
+    --inputColor: rgb(185, 185, 185);
+
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    
+    background-color: var(--background2);
+
+    background-image: url('./images/rblx-signup-bg-2.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* 
+---------------------
+      HEADER
+---------------------
+*/ 
+
+.logo-container {
+
+    position: absolute;
+    left: 32%;
+    top:7%;
+    transform: translate(-50%, -50%);
+
+}
+
+.logo-container > img {
+    width: 20rem;
+}
+
+/* 
+---------------------
+       SIGN UP
+---------------------
+*/ 
+
+.signUp-container {
+
+    font-family: "Roboto", sans-serif;
+
+    position: absolute;
+
+    left: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 15px;
+
+    width: 25rem;
+    height: 36rem;
+
+    min-width: 25rem;
+    min-height: 36rem;
+
+    border-radius: 1rem;
+
+    background-color: var(--background);
+    color: white;
+
+}
+
+.signUp-header h1 {
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -1.3px;
+    word-spacing: 6px;
+
+}
+
+/* 
+---------------------
+    SIGN UP BODY
+---------------------
+*/ 
+
+.signUp-body {
+    padding: 15px;
+}
+
+.signUp-formGroup {
+    margin-top: 1.5rem;
+}
+
+.signUp-label {
+    font-size: 1.1rem;
+}
+
+.signUp-birthday {
+
+    margin-top: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2rem;
+
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 8px;
+    border-color: var(--borderColor);
+
+}
+
+.signUp-birthday > .month {
+    
+    width: 40%;
+    border-color:  var(--borderColor);
+    border-width: 0 1px 0 0;
+
+}
+
+.signUp-birthday > .day {
+    
+    width: 30%;
+    border-color:  var(--borderColor);
+    border-width: 0 1px 0 0;
+
+}
+
+.signUp-birthday > .year {
+
+    width: 30%;
+    border: none;
+
+}
+
+.birthdaySelect-group {
+
+    height: 100%;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.birthdaySelect-group > #monthDropdown, .birthdaySelect-group > #dayDropdown, .birthdaySelect-group > #yearDropdown {
+
+    background-color: rgb(16, 15, 15);
+    color: var(--inputColor);
+
+    border: none;
+
+    height: 100%;
+    width: 100%;
+
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.birthdaySelect-group > #monthDropdown:focus, .birthdaySelect-group > #dayDropdown:focus, .birthdaySelect-group > #yearDropdown:focus {
+    
+    outline: none;
+    border-style: solid;
+    border-color: white;
+    border-width: 1.5px;
+
+}
+
+.birthdaySelect-group > #monthDropdown {
+    border-radius: 8px 0 0 8px;
+}
+
+.birthdaySelect-group > #yearDropdown {
+    border-radius: 0 8px 8px 0;
+}
+
+
+.signUp-username {
+    margin-top: 1.5rem;
+}
+
+.signUp-username > .usernameInput {
+
+    margin-top: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 2rem;
+
+}
+
+.usernameInput > input {
+
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: var(--borderColor);
+
+    background: var(--inputBg);
+    color: var(--inputColor);    
+
+    font-size: 1rem;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.usernameInput > input:focus {
+
+    outline: none;
+    border-color: white;
+
+}
+
+
+.signUp-password {
+    margin-top: 1.5rem;
+}
+
+.signUp-password > .passwordInput {
+
+    margin-top: .5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 2rem;
+
+}
+
+.passwordInput > input {
+
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: var(--borderColor);
+
+    background: var(--inputBg);
+    color: var(--inputColor);
+
+    font-size: 1rem;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.passwordInput > input:focus {
+
+    outline: none;
+    border-color: white;
+
+}
+
+
+.signUp-gender {
+    margin-top: 1.5rem;
+}
+
+.genderSelect{
+
+    margin-top: .5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 1.5px;
+    border-radius: 8px;
+    border-color: var(--borderColor);
+
+    height: 2.5rem;
+
+}
+
+.genderSelect > .genderInput {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 50%;
+
+}
+
+.genderSelect > #maleBtn button, .genderSelect > #femaleBtn button {
+
+    height: 100%;
+    width: 100%;
+
+    border: none;
+    border-color: var(--borderColor);
+
+    background-color: var(--inputBg);
+
+    cursor: pointer;
+
+    color: var(--inputColor);
+    font-size: 1.5rem;
+
+}
+
+
+.genderSelect > #maleBtn button {
+
+    border-radius: 8px 0 0 8px;
+    border-style: solid;
+    border-width: 0 1.5px 0 0;
+    border-color: var(--borderColor);
+
+}
+
+.genderSelect > #femaleBtn button {
+    border-radius: 0 8px 8px 0;
+}
+
+.genderSelect > #maleBtn button:focus {
+
+    color: rgb(62, 171, 255);
+
+}
+
+.genderSelect > #femaleBtn button:focus {
+
+    color: rgb(255, 133, 153);
+
+}
+
+.signUp-button {
+    margin-top: 2rem;
+    height: 2.5rem;
+}
+
+.signUp-button button {
+
+    width: 100%;
+    height: 100%;
+
+    background-color: green;
+    font-size: 1.3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 8px;
+
+}
+
+/* 
+---------------------
+      SHOWCASE
+---------------------
+*/ 
+
+.showcase-container {
+
+    position: absolute;
+    height: 33rem;
+    width: 30em;
+
+    top: 55%;
+    left: 32.5%;
+    transform: translate(-50%, -50%);
+
+    border: none;
+    border-radius: 1em;
+
+    background-color: rgba(0, 0, 0, 0.557);
+
+    z-index: 1;
+
+}
+
+.showcase-indexes {
+    display: none;
+    height: 100%;
+    border-radius: 1em;
+}
+
+.showcase-indexes > #showcase-index {
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 1em;
+
+}
+
+.showcase-indexes > .return-btn {
+
+    position: absolute;
+
+    border: none;
+    background: none;
+    color: white;
+
+    font-size: 2rem;
+
+    left: 10px;
+    top: 3px;
+
+    cursor: pointer;
+
+}
+
+.showcase-items {
+    z-index: 3;
+}
+
+.page-cards {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    transition-duration: 1.5s;
+
+}
+
+.showcase-title {
+
+    margin-top: 1rem;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: rgb(236, 236, 236);
+    text-align: center;
+    letter-spacing: .5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.swiper {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 20%,
+        black 80%,
+        transparent
+    );
+
+}
+
+.swiper-wrapper {
+    gap: 20px;
+}
+
+.swiper-slide {
+
+    width: 90.4px;
+    height: 110px;
+
+    cursor: pointer;
+
+    background-color: var(--background);
+
+    border-style: solid;
+    border-color: var(--borderColor);
+    border-width: 2px;
+    border-radius: 1em;
+
+    overflow: hidden;
+
+    transition-duration: .4s;
+
+}
+
+.swiper-slide::before{
+
+    content: "";
+    
+    color: white;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-radius: 1em;
+
+    width: 90.4px;
+    height: 110px;
+
+    pointer-events:none;
+    user-select: none;
+
+    position: absolute;
+
+    transition-duration: .5s;
+
+}
+
+.swiper-slide:hover::before {
+
+    background-color: rgba(0, 0, 0, 0.542);
+
+    content: "";
+
+}
+
+.swiper-slide:hover { border-color: rgb(194, 194, 194); }
+
+.card-img {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    transition-duration: .5s;
+
+}
+
+.card-img:hover {
+    object-fit: contain;
+}
+
+.swiper-button-prev, .swiper-button-next {
+
+    color: white;
+    cursor: pointer;
+
+}
+
+.rblx-studio-container {
+
+    gap: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rblx-studio-card {
+
+    width: 90px;
+    height: 90px;
+
+    cursor: pointer;
+
+    background-color: var(--background);
+
+    border-style: solid;
+    border-color: var(--borderColor);
+    border-width: 2px;
+    border-radius: 1em;
+
+    overflow: hidden;
+
+    transition-duration: .4s;
+
+}
+
+.rblx-studio-card::before {
+
+    content: "";
+    text-align: center;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    border-radius: 1em;
+
+    width: 90px;
+    height: 90px;
+
+    pointer-events:none;
+    user-select: none;
+
+    position: absolute;
+
+    transition-duration: .2s;
+
+}
+
+.rblx-studio-card:hover::before {
+
+    background-color: rgba(0, 0, 0, 0.542);
+
+}
+
+.rblx-studio-card:hover { border-color: rgb(194, 194, 194); }
+
+.mobile-show-showcase {
+    display: none;
+}
+
+/* 
+---------------------
+       SHADES
+---------------------
+*/ 
+
+.showcase-shades {
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    border-radius: 1em;
+
+    overflow: hidden;
+
+}
+
+.showcase-shades > .shade {
+
+    background: var(--inputBg);
+    height: 25%;
+
+    transition: all 2s cubic-bezier(.51,.92,.24,1.15);
+
+}
+
+
+/* 
+---------------------
+    MEDIA QUERIES
+---------------------
+*/ 
+
+@media only screen and (max-width: 1000px) {
+
+    .logo-container {
+        left: 50%;
+        top: 10%;
+    }
+
+    .logo-container img {
+        width: 30rem;
+    }
+
+    .signUp-container {
+
+        left: 50%;
+        top: 50%;
+
+        width: 30rem;
+        height: 35rem;
+
+    }
+
+    .signUp-formGroup {
+        margin-top: .5rem;
+    }
+
+    .signUp-birthday {
+
+        margin-top: 0;
+
+        height: 2.5rem;
+
+    }
+
+    .showcase-container {
+
+        display: block;
+
+        width: 70vw;
+        height: 55vh;
+
+        left: 50%;
+
+        top: 120vh;
+
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .logo-container {
+        
+        left: 50%;
+        top: 10%;
+
+    }
+
+    .logo-container > img {
+        width: 20rem;
+    }
+
+    .signUp-container {
+
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        
+        width: 20rem;
+        height: 35rem;
+        
+        min-height: 0;
+        min-width: 0;
+
+    }
+
+    .signUp-header h1 {
+
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: -.5px;
+        word-spacing: 4px;
+
+    }    
+    
+    .signUp-formGroup {
+        margin-top: .5rem;
+    }
+    
+    .signUp-label {
+        font-size: 1rem;
+    }
+    
+    .signUp-button {
+        margin-top: 1rem;
+    }
+    
+    .showcase-container {
+
+        display: block;
+
+        top: 140vh;
+        left: 50%;
+
+        width: 100%;
+
+    }    
+
+    .showcase-indexes > #showcase-index {
+        
+        width: 100%;
+
+    }
+
+}
